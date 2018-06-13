@@ -6,7 +6,7 @@
 
 # Day 8
 
-There are separate branches for Segment 1 and Segment 2 in this repository. Both segments include two things:
+- Complete all the questions so that all the tests pass.
 
 1) Coding exercises
 
