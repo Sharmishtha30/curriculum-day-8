@@ -21,8 +21,24 @@
   watchedObject.a.b[0].c = true;
   //=> 'Object changed: 2'
 */
-function onChange() {}
-
+function onChange() {
+}
+//   const target = {};
+//   const handler = {
+//     get(target, key) {
+//       return 'Object changed : ';
+//     },
+//   };
+//   const proxy = new Proxy(target, handler);
+//   proxy.foo;
+// }
+// Object.defineProperty(object,  {
+//   writable: false,
+//   configurable: false,
+//   enumerable: true,
+//   value: '🦄',
+// });
+// TypeErro
 /* Q2: Use ES6 Proxy to implement the following function
   Call a method on an iterable to call it on all items of the iterable
 
@@ -90,7 +106,8 @@ function setDefaultProperty() {}
     getOwnPropertyDescriptor
     traps in handler
 */
-function privateProps() {}
+function privateProps() {
+}
 
 module.exports = {
   onChange,

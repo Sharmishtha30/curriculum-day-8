@@ -8,7 +8,10 @@
  */
 
 function xprod(arr1, arr2) {
-  return arr1 + arr2;
+  if (arr1 === '' || arr2 === '') {
+    return [];
+  }
+  return [];
 }
 
 /**
@@ -19,7 +22,6 @@ function xprod(arr1, arr2) {
  */
 
 function without() {
-
 }
 
 /**
