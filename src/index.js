@@ -23,12 +23,14 @@
 */
 function onChange() {
 }
-//   const target = {};
+// function onChange(object, onChangeHandler) {
 //   const handler = {
-//     get(target, key) {
-//       return 'Object changed : ';
-//     },
-//   };
+//     get(target, property) {
+//       if(typeOf target[property] === 'object')
+//       return new Proxy(targert[property], handler)
+//     }
+//   }
+// }
 //   const proxy = new Proxy(target, handler);
 //   proxy.foo;
 // }
