@@ -250,7 +250,17 @@ function cipher(str) {
  */
 
 function splitEvery(n, list) {
-  return n + list;
+  if (list === '') {
+    return [];
+  }
+  // else if (typeOf list === 'object' ) {
+  //   let i;
+  //   let arr = '';
+  //   for (i = 0; i <= arr.length; i += 1) {
+  //     arr = list.reduce((acc, elem) => acc + elem);
+  //   }
+  // }
+  return [];
 }
 
 
@@ -294,13 +304,24 @@ Create an iterable using generator function.
 It should have the same functionality as the one in question 1
 */
 function* generatorIterable() {
-  yield 'abc';
+  let index = 0;
+  while (index < 5) {
+    yield index += 1;
+  }
 }
 
 // Q16 (*)
 const fibonacci = {
   * [Symbol.iterator]() {
-    // implement fibonacci
+    let a = 0;
+    let b = 1;
+    let result = 0;
+    while (true) {
+      a = b;
+      b = result;
+      result = a;
+      yield result;
+    }
   },
 };
 
